@@ -6,7 +6,7 @@ void setup() {
 
 
 void draw() {
-  drawface(250,200);
+  
 }
 void drawface(int x, int y) {
    // face
@@ -28,3 +28,6 @@ void drawface(int x, int y) {
   ellipse(x, y+40, 70, 20);
 }
 
+void mouseClicked() {
+  drawface(mouseX, mouseY);
+}

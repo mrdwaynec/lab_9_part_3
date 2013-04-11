@@ -2,10 +2,10 @@ void setup() {
   size(500, 500);
   background(255, 255, 255);
 }
-
-
-
+int x =200;
+int y = 200;
 void draw() {
+  drawface(x,y);
   
 }
 void drawface(int x, int y) {
@@ -28,6 +28,9 @@ void drawface(int x, int y) {
   ellipse(x, y+40, 70, 20);
 }
 
-void mouseClicked() {
-  drawface(mouseX, mouseY);
+void keyPressed() {
+  if(keyCode ==UP) {
+    y = y - 2;
+    
+  }
 }
